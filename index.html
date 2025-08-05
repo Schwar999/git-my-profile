@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomita Kosuke - ポートフォリオ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        .portfolio-container {
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 3rem;
+        }
+
+        .section-heading {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #1e3a8a;
+            display: flex;
+            align-items: center;
+        }
+
+        .project-card {
+            background-color: #f8fafc;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-tag {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="portfolio-container">
+
+        <header class="text-center mb-10">
+            <div class="flex items-center justify-center mb-4">
+                <span class="text-4xl font-extrabold text-blue-600 mr-2">Tomita Kosuke</span>
+                <i class="fas fa-microchip text-4xl text-gray-400"></i>
+            </div>
+            <p class="text-lg text-gray-600">PM & Full-Stack Engineer</p>
+        </header>
+
+        <section class="mb-10">
+            <h2 class="section-heading"><i class="fas fa-briefcase mr-2"></i>職務経歴</h2>
+            <div class="space-y-6">
+                <div class="project-card">
+                    <h3 class="font-bold text-xl text-gray-800">ニュース制作システムの開発</h3>
+                    <p class="text-sm text-gray-500 mt-1">2021年4月 〜 2024年12月 | 株式会社 NHKテクノロジーズ</p>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-700">概要と役割</h4>
+                        <p class="text-gray-600 mt-1">ニュース制作システムの改修や拡張、クラウド化によるハイブリッドクラウドの構築を担当。PMとして進捗管理やリスク管理も行いました。
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-700">技術スタック</h4>
+                        <div class="flex flex-wrap gap-2 mt-1">
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Oracle</span>
+                            <span class="skill-tag">DynamoDB</span>
+                            <span class="skill-tag">Linux (RHEL)</span>
+                            <span class="skill-tag">Apache</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="font-bold text-xl text-gray-800">クラウドデータレイク構築プロジェクト</h3>
+                    <p class="text-sm text-gray-500 mt-1">2021年9月 〜 2024年12月 | 株式会社 NHKテクノロジーズ</p>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-700">概要と役割</h4>
+                        <p class="text-gray-600 mt-1">AWSを利用したデータレイク及びそれを利用したシステム群の開発を担当 。要件定義から運用保守まで一貫して携わりました。</p>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-700">技術スタック</h4>
+                        <div class="flex flex-wrap gap-2 mt-1">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">CDK</span>
+                            <span class="skill-tag">SAM</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="font-bold text-xl text-gray-800">DevSecOps導入プロジェクト</h3>
+                    <p class="text-sm text-gray-500 mt-1">2024年3月 〜 2024年12月 | 株式会社 NHKテクノロジーズ</p>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-700">概要と役割</h4>
+                        <p class="text-gray-600 mt-1">開発基盤の標準化とDevSecOps導入に向けた、仮想開発環境の開発やCI/CDパイプラインの構築を担当。</p>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-700">技術スタック</h4>
+                        <div class="flex flex-wrap gap-2 mt-1">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">CDK</span>
+                            <span class="skill-tag">SAM</span>
+                            <span class="skill-tag">Linux (Ubuntu)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="font-bold text-xl text-gray-800">独自提案連携プロジェクト</h3>
+                    <p class="text-sm text-gray-500 mt-1">2024年3月 〜 2024年12月 | 株式会社 NHKテクノロジーズ</p>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-700">概要と役割</h4>
+                        <p class="text-gray-600 mt-1">企画から開発まで一貫して推進。Webアプリのフロントエンド開発とフルスタックのインフラ開発、PMを担当しました。</p>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-700">技術スタック</h4>
+                        <div class="flex flex-wrap gap-2 mt-1">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">NextJS</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">DynamoDB</span>
+                            <span class="skill-tag">CDK</span>
+                            <span class="skill-tag">SAM</span>
+                            <span class="skill-tag">Linux (Ubuntu)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="font-bold text-xl text-gray-800">ユーラシア大陸横断</h3>
+                    <p class="text-sm text-gray-500 mt-1">2025年1月 〜 2025年7月</p>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-700">概要</h4>
+                        <p class="text-gray-600 mt-1">イギリスからカザフスタンまで陸路で渡航。戦時中のイラン滞在経験あり</p>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-700">技術スタック</h4>
+                        <div class="flex flex-wrap gap-2 mt-1">
+                            <span class="skill-tag">English</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="section-heading"><i class="fas fa-laptop-code mr-2"></i>テクニカルスキル</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">Linux (RedHat, Ubuntu)</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">GCP</span>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="section-heading"><i class="fas fa-star mr-2"></i>活かせる経験・知識</h2>
+            <p class="text-gray-700 leading-relaxed">
+                フルスタックエンジニアとPMを経験し、上流および下流工程の知識を保有しています。オンプレミスサーバーでのサーバー導入・構築やネットワーク導入、PM、運用の経験があります。また、AWSを活用したインフラ開発においては、高度な専門知識と実践的なスキルを有しており、DevSecOpsへ取り組み、CI/CDを用いた開発の効率化やセキュリティサービスについての知識があります。
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-heading"><i class="fas fa-comment-dots mr-2"></i>自己PR</h2>
+            <p class="text-gray-700 leading-relaxed">
+                IT業界には珍しいタイプの性格をしていると評価されており、プロジェクトチーム全体のコミュニケーションの推進剤のような役割になれるかと存じます。前職の退職からはバックパッカーとして各国を旅し、海外の友人宅を拠点にするなどして生活していました。海外で得た多様な経験は新たな視点や柔軟な発想といった側面で貢献できると考えております。また、その期間も自作のVPNシステムを活用するなど、技術力の維持・向上に努めてまいりました。
+            </p>
+        </section>
+
+    </div>
+
+    <script>
+        const tagColors = {
+            'PHP': 'tag-purple',
+            'Oracle': 'tag-yellow',
+            'DynamoDB': 'tag-green',
+            'Linux': 'tag-blue',
+            'Linux (RHEL)': 'tag-blue',
+            'Linux (Ubuntu)': 'tag-blue',
+            'Linux (RedHat, Ubuntu)': 'tag-blue',
+            'Apache': 'tag-purple',
+            'Python': 'tag-green',
+            'TypeScript': 'tag-yellow',
+            'CDK': 'tag-red',
+            'SAM': 'tag-pink',
+            'NextJS': 'tag-cyan',
+            'Tailwind CSS': 'tag-blue',
+            'English': 'tag-gray',
+            'AWS': 'tag-orange',
+            'GCP': 'tag-orange',
+        };
+
+        const colorClasses = {
+            'tag-blue': 'bg-blue-100 text-blue-800',
+            'tag-green': 'bg-green-100 text-green-800',
+            'tag-yellow': 'bg-yellow-100 text-yellow-800',
+            'tag-purple': 'bg-purple-100 text-purple-800',
+            'tag-red': 'bg-red-100 text-red-800',
+            'tag-pink': 'bg-pink-100 text-pink-800',
+            'tag-cyan': 'bg-cyan-100 text-cyan-800',
+            'tag-gray': 'bg-gray-300 text-gray-800',
+            'tag-orange': 'bg-orange-100 text-orange-800',
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.skill-tag').forEach(tag => {
+                const techName = tag.textContent.trim();
+                const baseName = Object.keys(tagColors).find(name => techName.startsWith(name));
+                const className = tagColors[baseName];
+                if (className) {
+                    const colorClass = colorClasses[className];
+                    if (colorClass) {
+                        tag.classList.add(...colorClass.split(' '));
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
